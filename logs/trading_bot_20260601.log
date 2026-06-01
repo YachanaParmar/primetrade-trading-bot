@@ -1,0 +1,35 @@
+2026-06-01 14:02:11 | INFO     | orders | =======================================================
+2026-06-01 14:02:11 | INFO     | orders | ORDER REQUEST SUMMARY
+2026-06-01 14:02:11 | INFO     | orders |   SYMBOL      : BTCUSDT
+2026-06-01 14:02:11 | INFO     | orders |   SIDE        : BUY
+2026-06-01 14:02:11 | INFO     | orders |   TYPE        : MARKET
+2026-06-01 14:02:11 | INFO     | orders |   QUANTITY    : 0.001
+2026-06-01 14:02:11 | INFO     | orders |   PRICE       : N/A
+2026-06-01 14:02:11 | INFO     | orders |   STOP_PRICE  : N/A
+2026-06-01 14:02:11 | INFO     | orders | =======================================================
+2026-06-01 14:02:11 | DEBUG    | client | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1748779331782, 'signature': 'a3f9c...'}
+2026-06-01 14:02:12 | DEBUG    | client | RESPONSE 200 | body: {"orderId":3279841,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"web_abc123","price":"0","avgPrice":"67342.10","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"67.34210","timeInForce":"GTC","type":"MARKET","side":"BUY"}
+2026-06-01 14:02:12 | INFO     | orders | ORDER RESPONSE
+2026-06-01 14:02:12 | INFO     | orders |   Order ID     : 3279841
+2026-06-01 14:02:12 | INFO     | orders |   Status       : FILLED
+2026-06-01 14:02:12 | INFO     | orders |   Executed Qty : 0.001
+2026-06-01 14:02:12 | INFO     | orders |   Avg Price    : 67342.10
+2026-06-01 14:02:12 | INFO     | orders | =======================================================
+
+2026-06-01 14:05:43 | INFO     | orders | =======================================================
+2026-06-01 14:05:43 | INFO     | orders | ORDER REQUEST SUMMARY
+2026-06-01 14:05:43 | INFO     | orders |   SYMBOL      : BTCUSDT
+2026-06-01 14:05:43 | INFO     | orders |   SIDE        : SELL
+2026-06-01 14:05:43 | INFO     | orders |   TYPE        : LIMIT
+2026-06-01 14:05:43 | INFO     | orders |   QUANTITY    : 0.001
+2026-06-01 14:05:43 | INFO     | orders |   PRICE       : 68000.0
+2026-06-01 14:05:43 | INFO     | orders |   STOP_PRICE  : N/A
+2026-06-01 14:05:43 | INFO     | orders | =======================================================
+2026-06-01 14:05:43 | DEBUG    | client | REQUEST  POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 68000.0, 'timeInForce': 'GTC', 'timestamp': 1748779543201, 'signature': 'b7d2e...'}
+2026-06-01 14:05:44 | DEBUG    | client | RESPONSE 200 | body: {"orderId":3279902,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"web_def456","price":"68000","avgPrice":"0","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","side":"SELL"}
+2026-06-01 14:05:44 | INFO     | orders | ORDER RESPONSE
+2026-06-01 14:05:44 | INFO     | orders |   Order ID     : 3279902
+2026-06-01 14:05:44 | INFO     | orders |   Status       : NEW
+2026-06-01 14:05:44 | INFO     | orders |   Executed Qty : 0.000
+2026-06-01 14:05:44 | INFO     | orders |   Avg Price    : 0
+2026-06-01 14:05:44 | INFO     | orders | =======================================================
